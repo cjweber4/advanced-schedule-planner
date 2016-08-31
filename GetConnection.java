@@ -10,7 +10,7 @@ public class GetConnection {
 			String jdbcDriver = "com.mysql.jdbc.Driver";
 			Class.forName(jdbcDriver).newInstance();
 			String url = "jdbc:mysql://localhost:3306/coursesdb";
-			Connection conn = DriverManager.getConnection(url, "root", "Redwing1");
+			Connection conn = DriverManager.getConnection(url, "root", "");
 			System.out.println("connected");
 			return conn;
 		} catch (Exception e) {
